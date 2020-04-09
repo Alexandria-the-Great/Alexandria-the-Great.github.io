@@ -1,0 +1,8 @@
+@font-face
+{
+    font-family: 'Baron Neue Black';
+  src: url('Baron Neue Black.eot');
+      url('Baron Neue Black.eot?#') format('embedded-opentype'),
+      url('Baron Neue Black.woff') format('woff'),
+      url('Baron Neue Black.ttf') format('truetype');
+}

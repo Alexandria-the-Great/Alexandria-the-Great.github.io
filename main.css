@@ -1,0 +1,583 @@
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+html, body{
+    margin:0px;
+    padding:0px;
+    background-color: white;
+}
+
+.nav {
+	height: 30px;
+	background: white;
+	/*text-align: center; */
+	color: #f9c0c4;
+	margin: 0;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+    right: 0;
+	z-index: 9999;
+	width: 100%; 
+}
+
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav ul li {
+	list-style: none;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	float: left;
+	display: block;
+	padding: 6px 60% 0px 3%;
+	color: #f9c0c4;
+
+}
+
+
+.nav ul li.selected a {
+	color: #f18293; 
+}
+
+
+
+.nav ul li span {
+	float: right;
+ padding-right: 3%;
+ 
+}
+
+
+.nav ul li a:hover {
+	color: #f18293; 
+	-webkit-transition: all 0.3s ease-in;
+   -moz-transition: all 0.3s ease-in;
+   -o-transition: all 0.3s ease-in;
+   transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+
+
+p {
+	font-family:"baron-neue-black-webfont";
+}
+
+
+
+
+.clear{
+ clear: both;
+}
+
+
+
+@font-face{
+font-family:"abril-fatface-webfont";
+src:url("abril-fatface-webfont.eot");
+src:url("abril-fatface-webfont.eot") format("eot"),
+url("abril-fatface-webfont.woff") format("woff"),
+url("abril-fatface-webfont.ttf") format("truetype"),
+url("abril-fatface-webfont.svg") format("svg");}
+
+
+@font-face{
+font-family:"baron-neue-black-webfont";
+src:url("baron-neue-black-webfont.eot");
+src:url("baron-neue-black-webfont.eot") format("eot"),
+url("baron-neue-black-webfont.woff") format("woff"),
+url("baron-neue-black-webfont.ttf") format("truetype"),
+url("baron-neue-black-webfont.svg") format("svg");}
+
+
+@font-face{
+font-family:"gotu-webfont";
+src:url("gotu-webfont.eot");
+src:url("gotu-webfont.eot") format("eot"),
+url("gotu-webfont.woff") format("woff"),
+url("gotu-webfont.ttf") format("truetype"),
+url("gotu-webfont.svg") format("svg");}
+
+
+@font-face{
+font-family:"shree-devanagari-714-webfont";
+src:url("shree-devanagari-714-webfont.eot");
+src:url("shree-devanagari-714-webfont.eot") format("eot"),
+url("shree-devanagari-714-webfont.woff") format("woff"),
+url("shree-devanagari-714-webfont.ttf") format("truetype"),
+url("shree-devanagari-714-webfont.svg") format("svg");}
+
+
+
+
+
+
+
+
+
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lnav {
+  position:fixed; // keep fixed to window
+  float: left;
+  padding: 15% 5% 5% 5%;;
+  top: 0; left: 0; // position to top left of window
+  height:100%; width:50px; //set dimensions
+  transition: width ease .5s; // fluid transition when resizing
+  /*margin-top: 500px;*/
+  }
+  
+  .lnav ul li{
+	  list-style: none;
+  } 
+
+
+
+
+.width ul li {
+	list-style: none;
+}
+
+
+
+
+.alignleft {
+	float: left;
+	font-family:"abril-fatface-webfont";
+	color: white;
+	margin-top: 6%;
+	font-size: 400%;
+}
+.alignright {
+	float: right;
+	font-family: "gotu-webfont";
+	color: white;
+	margin-top: 10.5%;
+ font-size: 120%;
+}
+
+div.hr {
+	float: right;
+	margin-top: -1%;
+	background: white no-repeat scroll center;
+	width: 100%;
+	height: 1px;
+	border-width: 0;
+	color: white;
+	background-color: white;
+	
+}
+
+.text {
+	float: right;
+	text-align: left;
+	font-family: "shree-devanagari-714-webfont";
+	color: white;
+	margin-top: 5%;
+	margin-right: 10%;
+	margin-left: 10%;
+	
+}
+
+
+
+
+
+
+body {
+   margin: 0 auto;
+   padding: 0;
+}
+.wrap {
+   overflow: hidden;
+   margin: 0 auto;
+  
+}
+
+
+
+.width {
+	padding: 30px 0px 0px 0px; /*top has to be as large as nav height*/
+    padding-right: 200px;
+    padding-left: 200px;
+    clear: both;
+}
+
+.box {
+   float: left;
+   position: relative;
+   width: 33.33333%;
+   padding-bottom: 33.33333%;
+
+   //white-space: nowrap;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+    //align-items: center;
+    //text-align: flex-end;
+//justify-content: center;
+}
+.boxInner {
+   position: absolute;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+   bottom: 0px;
+   overflow: hidden;
+
+
+}
+.boxInner img {
+   //position: relative;
+   width: 100%;
+}
+
+/* bordered boxes */
+.boxInner .titleBox {
+   position: absolute;
+   bottom: 7%;
+   left: 7%;
+   right: 7%;
+   margin-bottom: -200%;
+   /*background: #f18293;*/
+   background: rgba(241, 130, 147, .75);
+   color: #FFF;
+   padding: 85px;
+   padding: 43% 0% 43% 0%;
+   display: -webkit-flex;
+	  display: -moz-flex;
+	  display: -ms-flex;
+	  display: flex;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+
+/* full bleed boxes
+.boxInner .titleBox {
+   position: absolute;
+   bottom: 0%;
+   left: 0%;
+   right: 0%;
+   margin-bottom: -200%;
+   background: rgba(237, 28, 126, .75);
+   color: #FFF;
+   padding: 85px;
+   padding: 83% 0% 83% 0%;
+Â Â Â display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+.boxInner .titleBoxText {
+   text-align: center;
+   position: absolute;
+   //bottom:calc(110% - 100%);
+   //top:calc(110% - 100%);
+   bottom: 10%;
+   //bottom: 40px;
+   //left: 49px;
+   //left:-webkit-calc(100% - 89%);
+   //left:-moz-calc(100% - 89%);
+   //left:calc(100% - 89%);
+width: calc(100% - 8em);
+
+  //right: 30px;
+   margin-bottom: 100%;
+   color: #FFF;
+   //padding: 20%;
+   padding: calc(15% + 1em); 
+   //white-space: nowrap;
+    display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+      //-webkit-align-items: center;
+      //-moz-align-items: center;
+     //-ms-align-items: center;
+     //   align-items: center;
+    //text-align: center;
+    justify-content: center;
+   -webkit-transition: width 3s;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+font-size: 100%;
+
+   height: 80%;
+   width: 61%;
+   //margin-top: 2cm;
+
+}
+
+
+
+.boxInner .titleBox h3, .boxInner .titleBoxText h3 {
+	font-family: "abril-fatface-webfont";
+ height: 80%;
+	width: 100%;
+	margin-top: 18%;
+ font-size: 21pt;
+}
+
+.boxInner .titleBox h3 div, .boxInner .titleBoxText h3 div {
+
+ //height: 80%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+   font-family: "gotu-webfont";
+   width: 100%;
+   color: #fff;
+   text-transform: lowercase;
+   font-size: 9pt;
+   letter-spacing: 2px;
+   padding: 0 10px;
+   height: 30%;
+}
+
+
+
+
+
+.boxInner .titleBox h3, .boxInner .titleBoxText h4 {
+	font-family: "abril-fatface-webfont";
+ height: 80%;
+	width: 100%;
+	margin-top: 27%;
+ font-size: 21pt;
+}
+
+.boxInner .titleBox h4 div, .boxInner .titleBoxText h4 div {
+
+ //height: 80%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+   font-family: "gotu-webfont";
+   width: 100%;
+   color: #fff;
+   text-transform: lowercase;
+   font-size: 9pt;
+   letter-spacing: 2px;
+   padding: 0 10px;
+   height: 30%;
+}
+
+
+
+
+
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+   margin-bottom: 0;
+}
+body.no-touch .boxInner:hover .titleBoxText {
+   margin-bottom: 15%;
+   margin-top: 15%;
+      padding-bottom: 10%;
+      padding-top: 10%;
+   top: calc(2% - 1em);
+}
+
+
+@media only screen and (max-width : 850px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+        .boxInner .titleBoxText {
+                font-size: 90%;
+        }
+}
+
+@media only screen and (max-width : 1000px) and (min-width : 851px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+        .boxInner .titleBoxText {
+                font-size: 150%;
+        }
+}
+
+@media only screen and (max-width : 1250px) and (min-width : 1001px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+        .boxInner .titleBoxText {
+                font-size: 80%;
+        }
+}
+
+@media only screen and (max-width : 3000px) and (min-width : 1600px) {
+        .boxInner .titleBox h3, .boxInner .titleBoxText h3 {
+                margin-top: 17%;
+        }
+}

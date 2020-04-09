@@ -1,0 +1,9 @@
+/* Indicators */
+#vanilla-indicators {
+        //display: inline-block;
+        z-index: 5;
+        position: absolute;
+        bottom: 50px;
+        margin-left: 48%
+}
+
